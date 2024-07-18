@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles.css */
+
+.container .rainbow-text span.large-letter {
+    font-size: 2em; /* Tamanho de fonte maior para o caractere 𝓓 */
+}
+
+/* styles.css */
+
+.large-letter {
+    color: rgb(206, 13, 190); /* Cor preta para o caractere 𝓓 */
+    font-size: 2em; /* Tamanho de fonte maior para o caractere 𝓓 */
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(173, 9, 105); /* Cor do texto */
+}
+
+h4 {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.rainbow-text {
+    font-size: 48px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Para tornar o texto mais visível */
+}
+
+.text {
+    flex: 1; /* Faz com que o texto ocupe todo o espaço disponível */
+    text-align: left; /* Alinha o texto à direita */
+    padding-right: 30px; /* Adiciona um espaço entre o texto e a imagem */
+    white-space: nowrap; /* Evita que o texto seja quebrado em várias linhas */
+    margin: 20px auto;
+    padding: 20px;
+    
+    
+}
+
+
+
+.container {
+
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {   /* container da imagem */
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form label,
+form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.frame {
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+}
+
+.outer-border {
+    border: 5px solid rgb(199, 174, 198); /* Adiciona uma borda externa */
+    padding: 10px; /* Espaçamento interno para a borda externa */
+}
+
+.inner-border {
+    border: 5px solid rgb(167, 131, 144); /* Adiciona uma borda interna */
+    padding: 10px; /* Espaçamento interno para a borda interna */
+}
+
+.logo {
+    width: 200px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da altura conforme a largura */
+}
+
+.image {
+    margin-left: 20px; /* Adiciona um espaço entre o texto e a imagem */
+}
+
+/* CSS do formulário em gradient */
+#containerform {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    transition: background 2s ease;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    margin: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+#containerform {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    background-size: 10% auto;
+    animation: gradientAnimation 10s linear infinite;
+}
