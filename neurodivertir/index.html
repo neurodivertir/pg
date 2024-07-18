@@ -69,17 +69,12 @@
         .colorful-text span:nth-child(22) { color: #f8bd1c; }
 
         #formacoes img {
-            margin-bottom: 20px; /* Espaçamento entre as imagens */
+        margin-bottom: 10px; /* Reduz o espaçamento entre as imagens */
         }
         
 
         .image2 {
             margin: 2px; /* Espaço entre as imagens */
-        }
-
-        /* Estilo para posicionar a segunda logo à direita */
-        .float-right {
-            float: right;
         }
 
         /* Estilo para corrigir o comportamento responsivo do menu */
@@ -126,46 +121,94 @@
             margin-left: auto; /* Empurra o segundo logo para a direita */
         }
 
+ /* Estilos CSS opcionais para o exemplo */
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #f8f9fa; /* Cor de fundo do cabeçalho */
+            padding: 10px 0; /* Espaçamento interno do cabeçalho */
+            position: relative; /* Posição relativa para conter os logos absolutos */
+        }
+        .logo-left,
+        .logo-right {
+            position: absolute; /* Posicionamento absoluto para sobrepor o menu */
+            top: 50%; /* Alinha ao meio verticalmente */
+            transform: translateY(-50%); /* Ajusta para o centro vertical */
+            transition: left 0.3s ease; /* Transição suave para o posicionamento */
+        }
+        .logo-left {
+            left: 10px; /* Posição à esquerda padrão */
+        }
+        .logo-right {
+            right: 10px; /* Posição à direita padrão */
+        }
+        .logo-right.adjust-left {
+            left: 10px; /* Ajuste para a esquerda quando estiver muito próximo do menu */
+        }
+        .logo-left img,
+        .logo-right img {
+            max-width: 100%; /* Imagens responsivas */
+            height: auto;
+            max-height: 50px; /* Altura máxima das imagens */
+        }
     </style>
 
 </head>
 
 <!--/head-->
 
-<body id="home" class="homepage">
-
+<body>
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img src="../images/logoPsi.png" alt="logo"></a>
+                <!-- Logo principal -->
+                <div class="logo-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/logoPsi.png" alt="logo">
+                    </a>
                 </div>
     
-                <div class="navbar-header navbar-right">
-                    <a class="navbar-brand" href="index.html"><img src="../images/logo2celebrinho.png" alt="logo"></a>
+                <!-- Logo secundário (à direita) -->
+                <div class="logo-right">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/logo2celebrinho.png" alt="logo">
+                    </a>
                 </div>
     
-                <div class="collapse navbar-collapse">
+                <!-- Botão de menu para telas pequenas -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+    
+                <!-- Itens do menu -->
+                <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="scroll active"><a href="#home">Agende Aqui</a></li>
-                        <li class="scroll"><a href="#formacoes">Formações</a></li>                       
+                        <li class="scroll active"><a href="#cta">Agende Aqui</a></li>
+                        <li class="scroll"><a href="#formacoes">Formações</a></li>
                         <li class="scroll"><a href="#services">Oficina Teens</a></li>
                         <li class="scroll"><a href="#portfolio">Avaliações</a></li>
-                        <!--<li class="scroll"><a href="#about">About</a></li>
-                        <li class="scroll"><a href="#meet-team">Team</a></li>
-                        <li class="scroll"><a href="#pricing">Pricing</a></li>
-                        <li class="scroll"><a href="#blog">Blog</a></li>-->
                         <li class="scroll"><a href="#contact">Endereço</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
+
+
+
+ 
 
     <!-- Restante do seu conteúdo aqui -->
 
 
-
+<!--Agende Aqui-->
 
     <section id="cta" class="wow fadeIn">
         <div class="container">
