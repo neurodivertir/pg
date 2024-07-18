@@ -154,6 +154,46 @@
             height: auto;
             max-height: 50px; /* Altura máxima das imagens */
         }
+
+
+
+
+        #cta2 {
+    padding: 100px 0; /* Espaçamento interno da seção */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo na horizontal */
+}
+
+#cta2 h2 {
+    font-size: 36px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#cta2 p {
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+#cta2 .btn {
+    margin-top: 20px; /* Espaçamento superior do botão */
+}
+
+@media (min-width: 992px) {
+    #cta2 {
+        background-attachment: fixed; /* Fixa a imagem de fundo em dispositivos maiores */
+    }
+
+    #cta2 .row {
+        display: flex;
+        align-items: center; /* Alinha verticalmente os itens da linha */
+    }
+
+    #cta2 .col-lg-6 {
+        padding-right: 30px; /* Espaçamento direito entre colunas */
+        padding-left: 30px; /* Espaçamento esquerdo entre colunas */
+    }
+}
+
     </style>
 
 </head>
@@ -200,8 +240,18 @@
         </nav>
     </header>
     
-
-
+                <!-- Div para o logo à esquerda 
+                <div class="logo-left">
+                    <img src="../images/logoPsi.png" alt="logo">
+                </div>
+    
+              
+                <div class="logo-right">
+                    <img src="../images/logo2celebrinho.png" alt="logo">
+                </div>
+            </div>
+        </nav>
+    </header>-->
 
  
 
@@ -241,42 +291,22 @@
         </div>
         
     </section>
-
-        <section id="main-slider">
-            <div class="owl-carousel owl-theme">
-                <div class="item" style="background-image: url('../images/slider/bg1.jpg');">
-                    <div class="slider-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="carousel-content">
-                                        <h2>Neuro Divertir com: <br>Ana Weiss CRP: 08/34482</h2>
-                                        <p>Cuidar da mente é o primeiro passo para uma vida mais leve!</p>
-                                        <a class="btn btn-primary btn-lg" href="https://agendar-psicoplanner.web.app/neuropsicologaAnaweiss" target="_blank">Agenda Neuro Divertir</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="item" style="background-image: url('../images/slider/bg3.jpeg');">
-                    <div class="slider-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="carousel-content">
-                                        <h2>Neuro Divertir com:<br>Ana Weiss CRP: 08/34482</h2>
-                                        <p>Seu bem-estar mental te ajuda a fazer a diferença.</p>
-                                        <a class="btn btn-primary btn-lg" href="https://agendar-psicoplanner.web.app/neuropsicologaAnaweiss" target="_blank">Agenda Neuro Divertir</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section id="cta2" style="background-image: url('../images/slider/bg5.jpeg'); background-size: cover; background-position: center center;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="text-center text-lg-left">
+                    <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>Neuro</span> Divertir</h2>
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Testes Psicológicos ou Neuropsicológicos <br />Escalas Psicométricas</p>
+                    <a class="btn btn-primary btn-lg wow fadeInUp" href="https://agendar-psicoplanner.web.app/neuropsicologaAnaweiss" target="_blank" data-wow-duration="300ms" data-wow-delay="200ms">Agenda Neuro Divertir</a>
                 </div>
             </div>
-        </section>
+            <div class="col-lg-6">
+                <!-- Espaço reservado para a imagem (será ajustado com CSS) -->
+            </div>
+        </div>
+    </div>
+</section>
 
 
   
@@ -339,18 +369,17 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Avaliações Neuropsicológicas</h2>
-                <p class="text-center wow fadeInDown"> Aqui temos um resumo para maior parte das dúvidas sobre as aplicações de testes <br> Caso não encontrar o que precise, pode nos contatar. Ficaremos felizes em prestar demais informações.</p>
+                <p class="text-center wow fadeInDown">Aqui temos um resumo para a maioria das dúvidas sobre as aplicações de testes.<br>Caso não encontre o que precisa, pode nos contatar. Ficaremos felizes em fornecer mais informações.</p>
             </div>
-
-            <div class="text-center">
-                <ul class="portfolio-filter">
-                    <li><a class="active" href="#" data-filter="*">Avaliações</a></li>
-                    <li><a href="#" data-filter=".creative">Avaliações Neuropsicológicas</a></li>
-                    <li><a href="#" data-filter=".corporate">Avaliações Psicológicas</a></li>
-                    <li><a href="#" data-filter=".portfolio">Avaliações dos Idosos</a></li>
-                </ul>
-                <!--/#portfolio-filter-->
-            </div>
+                <div class="text-center">
+                    <ul class="portfolio-filter">
+                        <li><a class="active" href="#" data-filter="*">Avaliações</a></li>
+                        <li><a href="#" data-filter=".creative">Avaliações Neuropsicológicas</a></li>
+                        <li><a href="#" data-filter=".corporate">Avaliações Psicológicas</a></li>
+                        <li><a href="#" data-filter=".portfolio">Avaliações dos Idosos</a></li>
+                    </ul>
+                    <!--/#portfolio-filter-->
+                </div>
 
             <div class="portfolio-items">
                 <div class="portfolio-item creative">
