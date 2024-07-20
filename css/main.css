@@ -430,48 +430,31 @@ ul.nostyle i {
 #portfolio .portfolio-filter {
     list-style: none;
     padding: 0;
-    margin: 0 0 50px;
-    display: inline-block;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
 }
 
-#portfolio .portfolio-filter>li {
-    float: left;
-    display: block;
+#portfolio .portfolio-filter li {
+    margin: 5px; /* Espaçamento entre os itens do filtro */
 }
 
-#portfolio .portfolio-filter>li a {
+#portfolio .portfolio-filter li a {
     display: block;
-    padding: 7px 15px;
+    padding: 10px 15px; /* Espaçamento interno dos itens */
+    text-decoration: none;
     background: #e5e5e5;
     color: #64686d;
-    position: relative;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-#portfolio .portfolio-filter>li a:hover,
-#portfolio .portfolio-filter>li a.active {
+#portfolio .portfolio-filter li a:hover,
+#portfolio .portfolio-filter li a.active {
     background: #45aed6;
     color: #fff;
     box-shadow: 0 -3px 0 0 #318daf inset;
-    -webkit-box-shadow: 0 -3px 0 0 #318daf inset;
-}
-
-#portfolio .portfolio-filter>li a.active:after {
-    content: " ";
-    position: absolute;
-    bottom: -17px;
-    left: 50%;
-    margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: #318daf transparent transparent transparent;
-}
-
-#portfolio .portfolio-filter>li:first-child a {
-    border-radius: 4px 0 0 4px;
-}
-
-#portfolio .portfolio-filter>li:last-child a {
-    border-radius: 0 4px 4px 0;
 }
 
 #portfolio .portfolio-items {
@@ -482,9 +465,6 @@ ul.nostyle i {
     width: 24.9%;
     float: left;
     padding: 15px;
-    -webkit-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -495,7 +475,6 @@ ul.nostyle i {
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
     opacity: 0;
     transition: opacity 400ms;
-    -webkit-transition: opacity 400ms;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -517,7 +496,6 @@ ul.nostyle i {
     top: -18px;
     right: 12px;
     border-radius: 50%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
     background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
     width: 36px;
     height: 36px;
@@ -525,7 +503,6 @@ ul.nostyle i {
     text-align: center;
     color: #fff;
     box-shadow: 0 0 0 2px #fff;
-    -webkit-box-shadow: 0 0 0 2px #fff;
 }
 
 #portfolio .portfolio-item:hover .portfolio-info {
