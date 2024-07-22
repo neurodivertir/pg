@@ -1,4 +1,4 @@
 # pg
-[Link para index.html](https://github.com/neurodivertir/pg/neurodivertir/index.html)
+[Link para index.html](https://neurodivertir.github.io/pg/neurodivertir/index.html)
 
 
