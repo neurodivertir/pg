@@ -2,7 +2,7 @@
 
 Visite a página desenvolvida para Neuropsicologia:
 
-[**Neurodivertir - Página Principal**](https://neurodivertir.github.io/pg/neurodivertir/index.html)
+[**Neurodivertir - Página Principal**](https://neurodivertir.com.br)
 
 Esta página foi criada com o objetivo de oferecer recursos e informações sobre Neuropsicologia em atendimento à Neuropsicóloga  
 
