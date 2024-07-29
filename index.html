@@ -197,7 +197,7 @@
             text-align: center; /* Centraliza o conteúdo na horizontal */
         }
 
-        #cta2 h2 {
+        #cta2 h4 {
             font-size: 36px; /* Tamanho da fonte do título */
             margin-bottom: 20px; /* Espaçamento inferior */
         }
@@ -229,6 +229,37 @@
         .btn-rounded {
             border-radius: 80px; /* Valor do raio para arredondar os cantos */
         }
+
+
+        /* CSS para estilizar o retângulo */
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px; /* Ajuste conforme necessário */
+            height: 60px; /* Ajuste conforme necessário */
+            border-radius: 15px;
+            background-color: #e7c0e7;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            margin: 20px auto; /* Adiciona margem automática para centralizar */
+        }
+
+        .rectangle:hover {
+            background-color: #e1e7eb;
+        }
+
+        .text {
+            margin: 0;
+            padding: 20px; /* Adiciona algum padding para o texto não ficar muito colado nas bordas */
+        }
+
+
     </style>
 
 </head>
@@ -304,11 +335,11 @@
                 <span>N</span><span>e</span><span>u</span><span>r</span><span>o</span>
                 <span>D</span><span>i</span><span>v</span><span>e</span><span>r</span><span>t</span><span>i</span><span>r</span>
             </h1>
-            <h3><strong>Neuropsicóloga Ana Weiss</strong></h3>
+            <h3>Neuropsicóloga Ana Weiss</h3>
             <ul>
-                <li><strong>Avaliação e reabilitação Neuropsicológica</strong></li>
-                <li><strong>Psicoterapia para adultos e adolescentes</strong></li>
-                <li><strong>Atendimento presencial e online</strong></li>
+                <li>Avaliação e reabilitação Neuropsicológica</li>
+                <li>Psicoterapia para adultos e adolescentes</li>
+                <li>Atendimento presencial e online</li>
             </ul>
             
         </div>
@@ -322,7 +353,7 @@
         <div class="col-sm-4 text-right">
             <a class="btn-rounded" href="https://agendar-psicoplanner.web.app/neuropsicologaAnaweiss" target="_blank">
                 <i class="fas fa-calendar-alt fa-8x" style="margin-right: 15px;"></i> <!-- Ícone de agenda -->
-                <h2 style="display: inline; color: rgb(84, 103, 167);">Agende aqui</h2>
+                <h4 style="display: inline; color: rgb(84, 103, 167);">Agende aqui</h4>
             </a>
         </div>
     </div>
@@ -337,7 +368,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="text-center text-lg-left">
-                    <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>Neuro</span> Divertir</h2>
+                    <h4 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>Neuro</span> Divertir</h4>
                     <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Testes Psicológicos ou Neuropsicológicos <br />Escalas Psicométricas</p>
                     <a class="btn btn-primary btn-lg wow fadeInUp btn-rounded" href="https://agendar-psicoplanner.web.app/neuropsicologaAnaweiss" target="_blank" data-wow-duration="300ms" data-wow-delay="200ms">Agenda Neuro Divertir</a>
                 </div>
@@ -379,7 +410,7 @@
     <section id="cta2">
         <div class="container">
             <div class="text-center">
-                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>Neuro</span> Divertir</h2>
+                <h4 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>Neuro</span> Divertir</h4>
                 <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Testes Psicológicos ou Neuropsicológicos <br />Escalas Psicométricas</p>
                 <!--<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#">Free Download</a></p> -->
                 <img class="img-responsive wow fadeIn" src="images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
@@ -387,23 +418,36 @@
         </div>
     </section>
 
+
     <section id="services">
         <div class="container">
- <!--Mural-->
+            <!-- Mural -->
             <div class="section-header" >
                 <h3 class="colorful-text section-title text-center wow fadeInDown">
                     <span>M</span><span>U</span><span>R</span><span>A</span><span>L</span>
                     <span>N</span><span>e</span><span>u</span><span>r</span><span>o</span>
                     <span>D</span><span>i</span><span>v</span><span>e</span><span>r</span><span>t</span><span>i</span><span>r</span>
                 </h3>
-                <p class="text-center wow fadeInDown"> Publicação e Exposição<br> Oficina Ansiedade Teens</p>
+             
+                <h4><p class="text-center wow fadeInDown"> Publicação e Exposição<br> Oficina Ansiedade Teens  <br> </h4>                        
+                    <li>Expressão Artística: Crianças e Adolescentes usam arte para mostrar suas experiências com ansiedade.</li>
+                    <li>Importância da Saúde Mental: Destaca a relevância da saúde mental na adolescência.</li>
+                    <li>Redução do Estigma: Ajuda a desestigmatizar questões de saúde mental.</li>
+                    <li>Conscientização e Educação: Promove a educação sobre transtornos de ansiedade juvenil.</li>
+                    <li>Participação e Apoio: Encoraja a participação pública e o apoio à causa.</li></p>
+                
+           
             </div>
-            <iframe src="phanton/MURALNEURODIVERTIR.html" width="100%" height="1630px" frameborder="0"></iframe>
-            
+            <a href="phanton/MURALNEURODIVERTIR.html" target="_blank" class="rectangle">
+                <div class="text">
 
+                    <p class="footer">Clique para conhecer</p>
+                </div>
+            </a>
         </div>
-        <!--/.container-->
+        <!-- /.container -->
     </section>
+    
     <!--/#services-->
 
     <section id="portfolio">
@@ -411,127 +455,128 @@
             <div class="section-header">
                 <h1 class="text-center wow fadeInDown">Avaliações Neuropsicológicas</h1> 
                 <h1 class="section-title text-center wow fadeInDown"></h1>
-              
+                
                 <p class="text-center wow fadeInDown">Aqui temos um resumo para a maioria das dúvidas sobre as aplicações de testes.<br>Caso não encontre o que precisa, pode nos contatar. Ficaremos felizes em fornecer mais informações.</p>
             </div>
-                <div class="text-center">
-                    <ul class="portfolio-filter">
-                        <li><a class="active" href="#" data-filter="*">Avaliações</a></li>
-                        <li><a href="#" data-filter=".creative">Avaliações Neuropsicológicas</a></li>
-                        <li><a href="#" data-filter=".corporate">Avaliações Psicológicas</a></li>
-                        <li><a href="#" data-filter=".portfolio">Avaliações dos Idosos</a></li>
-                    </ul>
-                    <!--/#portfolio-filter-->
-                </div>
-
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">Avaliações</a></li>
+                    <li><a href="#" data-filter=".creative">Avaliações Neuropsicológicas</a></li>
+                    <li><a href="#" data-filter=".corporate">Avaliações Psicológicas</a></li>
+                    <li><a href="#" data-filter=".portfolio">Avaliações dos Idosos</a></li>
+                </ul>
+                <!--/#portfolio-filter-->
+            </div>
+    
             <div class="portfolio-items">
                 <div class="portfolio-item creative">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/TEA.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Transtorno do Espectro Autista</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-Neuro/TEA.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-Neuro/TEA.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/TEA.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Transtorno do Espectro Autista</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-               
-
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item corporate">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Concurso.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Avaliação para concurso público</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-PSI/CONCURSO.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-PSI/CONCURSO.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Concurso.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Avaliação para concurso público</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item creative">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Apredizagem.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Transtorno Específico de Aprendizagem</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-Neuro/APRENDIZAGEM.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-Neuro/APRENDIZAGEM.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Apredizagem.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Transtorno Específico de Aprendizagem</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                 
-                
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item corporate">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Personalidade.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Avaliação de Personalidade</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-PSI/PERSONALIDADE.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-PSI/PERSONALIDADE.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Personalidade.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Avaliação de Personalidade</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item creative">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Intelectual.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Transtorno de Desenvolvimento Intelectual</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-Neuro/TDI.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-Neuro/TDI.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Intelectual.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Transtorno de Desenvolvimento Intelectual</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
-                </div>               
+                    </a>
+                </div>
                 <!--/.portfolio-item-->
-
-                
-
+    
                 <div class="portfolio-item corporate">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Orientacao.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Orientação Vocacional</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-PSI/ORIENTACAO.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-PSI/ORIENTACAO.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Orientacao.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Orientação Vocacional</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item creative">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/TDAH.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Transtorno de Déficit de Atenção e Hiperatividade</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/AVA-Neuro/TDAH.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/AVA-Neuro/TDAH.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/TDAH.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Transtorno de Déficit de Atenção e Hiperatividade</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item portfolio">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Idoso.jpg" alt="">
-                        <div class="portfolio-info">
-                            <h3>Avaliação do Idoso</h3>
-                            Visualize para mais informações.
-                            <a class="preview" href="images/portfolio/Avaliacoes/Idosos/IDOSO.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    <a href="images/portfolio/Avaliacoes/Idosos/IDOSO.jpg" rel="prettyPhoto">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/portfolio/Avaliacoes/logos/Idoso.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Avaliação do Idoso</h3>
+                                Clique para mais informações.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!--/.portfolio-item-->
             </div>
         </div>
         <!--/.container-->
     </section>
+    
     <!--/#portfolio-->
 
 
