@@ -143,6 +143,23 @@ li {
 
 .row {
     display: flex;
+    max-width: 900px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites */
+}
+
+.responsive-image {
+    width: 100%; /* Ajusta a largura da imagem para 100% do container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 420px; /* Limita a altura máxima da imagem */
+}
+
+/* Media query para telas menores */
+@media (max-width: 900px) {
+    .responsive-image {
+        width: 100%; /* Ajusta a largura para 100% do container */
+        height: auto; /* Mantém a proporção */
+    }
 }
 
 .col {
