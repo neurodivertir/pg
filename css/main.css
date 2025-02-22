@@ -43,7 +43,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #2a95be;
+    color: #830394;
 }
 
 hr {
@@ -94,7 +94,7 @@ hr {
     margin-left: -12px;
     border: 5px solid #fff;
     border-radius: 20px;
-    background: #45aed6;
+    background: #830394;
 }
 
 .btn {
@@ -104,13 +104,13 @@ hr {
 }
 
 .btn.btn-primary {
-    background: #45aed6;
-    border-color: #2a95be;
+    background: #830394;
+    border-color: #e88bf5;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-    background: #2a95be;
+    background: #e7944c;
 }
 
 .column-title {
@@ -206,7 +206,7 @@ ul.nostyle i {
     #main-menu.navbar-default .navbar-nav>li:hover>a {
         background: transparent;
         padding-top: 37px;
-        border-top: 3px solid #45aed6;
+        border-top: 3px solid #d145d6;
     }
     #main-menu.navbar-default .dropdown-menu {
         padding: 0 20px;
@@ -334,7 +334,7 @@ ul.nostyle i {
 
 #cta {
     padding: 50px 0;
-    background-color: #e8f5f1;
+    background-color: #ffedf9;
 }
 
 #cta h2 {
@@ -444,17 +444,17 @@ ul.nostyle i {
     display: block;
     padding: 10px 15px; /* Espaçamento interno dos itens */
     text-decoration: none;
-    background: #e5e5e5;
-    color: #64686d;
+    background: #830394;
+    color: #ffffff;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 #portfolio .portfolio-filter li a:hover,
 #portfolio .portfolio-filter li a.active {
-    background: #45aed6;
+    background: #e7944c;
     color: #fff;
-    box-shadow: 0 -3px 0 0 #318daf inset;
+    box-shadow: 0 -3px 0 0 #830394 inset;
 }
 
 #portfolio .portfolio-items {
@@ -1034,7 +1034,7 @@ ul.nostyle i {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
-    background: #45aed6;
+    background: #29012e;
 }
 
 #footer a {
