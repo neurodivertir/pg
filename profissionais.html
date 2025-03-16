@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe - NeuroDivertir</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Cabeçalho com fundo e estilo moderno */
+        header {
+            background: linear-gradient(135deg, #a702e9, #b71dc5, #a702e9);
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+            border-bottom: 4px solid #830394;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Estilo dos cards de profissionais */
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #e7944c, #830394);
+            background-size: 300% 300%;
+            animation: gradientBorder 5s linear infinite;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-wrapper:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            cursor: pointer;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 767px) {
+            .profile-wrapper {
+                padding: 10px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+        }
+
+        /* Modificar o estilo para o contêiner da imagem */
+        .modal-body {
+            position: relative; /* Para permitir o posicionamento absoluto dos botões de zoom */
+        }
+        .modal-body img {
+        display: block; /* Garante que a imagem seja tratada como um bloco */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do modal */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+        /* Estilo para os botões de zoom */
+        .zoom-buttons {
+            position: absolute;
+            bottom: 20px; /* Ajuste a posição vertical dos botões */
+            left: 50%;
+            transform: translateX(-50%); /* Centraliza os botões horizontalmente */
+            margin-top: 15px; /* Distância entre a imagem e os botões */
+            text-align: center; /* Centraliza os botões */
+            z-index: 10; /* Garante que os botões fiquem sobre a imagem */
+        }
+
+        .zoom-buttons button {
+            margin: 0 10px; /* Adiciona espaçamento horizontal entre os botões */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Conheça Nossa Equipe</h1>
+        <p>Profissionais especializados que fazem a diferença aqui na NeuroDivertir</p>
+    </header>
+
+    <!-- Seção de Formações -->
+    <section id="formacoes" class="py-5" style="background-color: #f8f8f8;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 30px; font-weight: bold;"></h2>
+            <div class="row justify-content-center">
+                <!-- Profissional 1 -->
+                <div class="col-2 mb-4 d-flex justify-content-center">
+                    <div class="profile-wrapper">
+                        <img src="img_profissionais/Ana.png" class="profile-img" alt="Profissional 1" onclick="openModal('modal1')">
+                    </div>
+                    <!-- Modal -->
+                    <div id="modal1" class="modal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Imagem do profissional dentro do modal -->
+                                    <img id="modalImg1" src="img_profissionais/Ana.png" class="profile-img mb-3" alt="Profissional 1">
+                                    <br>
+                                
+                                    <!-- Currículo 1 com botões de zoom -->
+                                    <img id="curriculo1" src="img_profissionais/cv/Ana 1e2.jpg" class="img-fluid rounded shadow" alt="Currículo Profissional 1">
+
+                                    <div class="zoom-buttons">
+                                        <button class="btn btn-secondary" onclick="zoomIn('curriculo1')">Zoom +</button>
+                                        <button class="btn btn-secondary" onclick="zoomOut('curriculo1')">Zoom -</button>
+                                        <a href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa" class="btn btn-primary mt-3" target="_blank">Agendar</a>
+                                    </div>
+                                    <br>
+                                
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profissional 2 -->
+                <div class="col-2 mb-4 d-flex justify-content-center">
+                    <div class="profile-wrapper">
+                        <img src="img_profissionais/Natalia.jpeg" class="profile-img" alt="Profissional 2" onclick="openModal('modal2')">
+                    </div>
+                    <!-- Modal -->
+                    <div id="modal2" class="modal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Imagem do profissional dentro do modal -->
+                                    <img src="img_profissionais/Natalia.jpeg" class="profile-img mb-3" alt="Profissional 2">
+                                    <br>
+                                    <img id="curriculo2" src="img_profissionais/cv/Natalia.jpeg" class="img-fluid rounded shadow" alt="Currículo Profissional 2"><br>
+                        
+                                                                    <!-- Botões de zoom -->
+                                     <div class="zoom-buttons">
+                                         <button class="btn btn-secondary" onclick="zoomIn('curriculo2')">Zoom +</button>
+                                         <button class="btn btn-secondary" onclick="zoomOut('curriculo2')">Zoom -</button>
+                                         <a href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa" class="btn btn-primary mt-3" target="_blank">Agendar</a>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profissional 3 -->
+                <div class="col-2 mb-4 d-flex justify-content-center">
+                    <div class="profile-wrapper">
+                        <img src="img_profissionais/Cleise.jpeg" class="profile-img" alt="Profissional 3" onclick="openModal('modal3')">
+                    </div>
+                    <!-- Modal -->
+                    <div id="modal3" class="modal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Imagem do profissional dentro do modal -->
+                                    <img src="img_profissionais/Cleise.jpeg" class="profile-img mb-3" alt="Profissional 3">
+                                    <br>
+                                    <img id="curriculo3" src="img_profissionais/cv/Cleise.jpeg" class="img-fluid rounded shadow" alt="Currículo Profissional 3"><br>
+                                    
+                                    <!-- Botões de zoom -->
+                                    <div class="zoom-buttons">
+                                           <button class="btn btn-secondary" onclick="zoomIn('curriculo3')">Zoom +</button>
+                                           <button class="btn btn-secondary" onclick="zoomOut('curriculo3')">Zoom -</button>
+                                           <a href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa" class="btn btn-primary mt-3" target="_blank">Agendar</a>
+                                    </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profissional 4 -->
+                <div class="col-2 mb-4 d-flex justify-content-center">
+                    <div class="profile-wrapper">
+                        <img src="img_profissionais/Michele.jpeg" class="profile-img" alt="Profissional 4" onclick="openModal('modal4')">
+                    </div>
+                    <!-- Modal -->
+                    <div id="modal4" class="modal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Imagem do profissional dentro do modal -->
+                                    <img src="img_profissionais/Michele.jpeg" class="profile-img mb-3" alt="Profissional 4">
+                                    <br>
+                                    <img id="curriculo4" src="img_profissionais/cv/Michele.jpeg" class="img-fluid rounded shadow" alt="Currículo Profissional 4"><br>
+                
+                                    <!-- Botões de zoom -->
+                                    <div class="zoom-buttons">
+                                        <button class="btn btn-secondary" onclick="zoomIn('curriculo4')">Zoom +</button>
+                                        <button class="btn btn-secondary" onclick="zoomOut('curriculo4')">Zoom -</button>
+                                        <a href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa" class="btn btn-primary mt-3" target="_blank">Agendar</a>
+                                 </div>                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS + JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openModal(modalId) {
+            const modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+
+        // Funções de zoom
+        function zoomIn(imgId) {
+            const img = document.getElementById(imgId);
+            const currentScale = img.style.transform.replace('scale(', '').replace(')', '') || 1;
+            const newScale = parseFloat(currentScale) + 0.1;
+            img.style.transform = `scale(${newScale})`;
+        }
+
+        function zoomOut(imgId) {
+            const img = document.getElementById(imgId);
+            const currentScale = img.style.transform.replace('scale(', '').replace(')', '') || 1;
+            const newScale = Math.max(parseFloat(currentScale) - 0.1, 0.5); // Evita que o zoom seja menor que 50%
+            img.style.transform = `scale(${newScale})`;
+        }
+    </script>
+
+</body>
+</html>
