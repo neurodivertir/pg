@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Saiba como funciona o atendimento psicológico online, seus benefícios, segurança e quando ele é indicado. Atendimento humanizado na NeuroDivertir."
+    />
+    <meta
+        name="keywords"
+        content="atendimento online, psicoterapia online, psicóloga online, terapia por videochamada, saúde mental digital, NeuroDivertir, Curitiba"
+    />
+    <meta name="author" content="NeuroDivertir - Ana Weiss" />
+  
+    <title>Como funciona o atendimento online? | NeuroDivertir</title>
+    <link rel="shortcut icon" href="../images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+    />
+    
+    <!-- Animate, Owl Carousel e outras libs do exemplo -->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.transitions.css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" />
+
+    <!-- Seu CSS customizado -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="images/logo.png" />
+
+    <style>
+        /* --- Ajustes específicos para esta página --- */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin-top: 100px; /* espaço para o menu fixo */
+        }
+
+        main.container {
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+            padding: 0 15px;
+        }
+
+        main h1,
+        main h2 {
+            color: #830394;
+            font-weight: 700;
+        }
+
+        main p,
+        main ul li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        main ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        main a {
+            color: #e7944c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main a:hover {
+            color: #830394;
+            text-decoration: underline;
+        }
+
+        /* Botões estilo CTA */
+        .btn-rounded {
+            border-radius: 80px;
+            background-color: #e7944c;
+            color: white;
+            padding: 10px 25px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-rounded:hover {
+            background-color: #830394;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Cabeçalho fixo com menu */
+        #header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-left,
+        .logo-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 50px;
+        }
+
+        .logo-left {
+            left: 15px;
+        }
+
+        .logo-right {
+            right: 15px;
+        }
+
+        .logo-left img,
+        .logo-right img {
+            max-height: 50px;
+            height: auto;
+            width: auto;
+        }
+
+        /* Menu centralizado e responsivo */
+        nav.navbar-default {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        nav.navbar-default .navbar-collapse ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav.navbar-default .navbar-collapse ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav.navbar-default .navbar-collapse ul li a {
+            color: #830394;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav.navbar-default .navbar-collapse ul li a:hover,
+        nav.navbar-default .navbar-collapse ul li.active a {
+            color: #e7944c;
+        }
+
+        /* Responsividade menu */
+        @media (max-width: 767px) {
+            .logo-left,
+            .logo-right {
+                position: static;
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                max-height: 40px;
+            }
+
+            nav.navbar-default .navbar-collapse ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        #header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-left,
+        .logo-right {
+            position: absolute;
+            top: 20%;
+            transform: translateY(-50%);
+            max-height: 5px;
+        }
+
+        .logo-left {
+            left: 15px;
+        }
+
+        .logo-right {
+            right: 15px;
+        }
+
+        .logo-left img,
+        .logo-right img {
+            max-height: 50px;
+            height: auto;
+            width: auto;
+        }
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #e7944c, #d67f3e);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 6px 12px rgba(231, 148, 76, 0.5);
+            transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-voltar:hover {
+            background: linear-gradient(45deg, #830394, #6f2975);
+            box-shadow: 0 8px 20px rgba(131, 3, 148, 0.7);
+            transform: translateY(-3px);
+            color: #fff;
+        }
+
+        .btn-voltar svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+            transition: fill 0.3s ease;
+        }
+
+        .btn-voltar:hover svg {
+            fill: #ffcc66;
+        }
+    </style>
+
+    
+</head>
+<header id="header">
+  <div class="logo-left">
+    <a href="index.html">
+      <img src="../images/logo.png" alt="Logo NeuroDivertir" />
+    </a>
+  </div>
+
+  <div class="logo-right">
+    <a href="index.html">
+      <img src="../images/logo2celebrinho.png" alt="Logo Celebrinho" />
+    </a>
+  </div>
+</header>
+<a href="../index.html" class="btn-voltar" aria-label="Voltar para a página inicial">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  Voltar para a página inicial
+</a>
+<body>
+
+
+    <main class="container">
+        <h1>Como funciona o atendimento online?</h1>
+
+        <p>
+            O atendimento psicológico online permite que pacientes recebam suporte emocional e terapêutico no conforto e segurança de suas casas, por meio de plataformas digitais autorizadas e com sigilo profissional garantido.
+        </p>
+
+        <h2>Benefícios da terapia online:</h2>
+        <ul>
+            <li>Mais flexibilidade de horários e comodidade;</li>
+            <li>Acesso facilitado, especialmente para quem tem dificuldade de locomoção ou vive em outras cidades;</li>
+            <li>Ambiente acolhedor e seguro, mesmo à distância;</li>
+            <li>Efetividade comprovada em diversos tipos de queixas psicológicas.</li>
+        </ul>
+
+        <p>
+            Na <strong>NeuroDivertir</strong>, utilizamos plataformas seguras e profissionais capacitados para garantir a qualidade do atendimento online.
+        </p>
+
+        <h2>Quer saber se esse formato é ideal para você?</h2>
+
+        <center>  
+            <h2>Agende um atendimento</h2>
+
+            <div class="row my-4 align-items-left">
+                <div class="col-md-6 text-start">
+                    <a
+                    href="https://wa.me/554130936985"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-rounded d-inline-flex align-items-left"
+                    style="gap: 10px;"
+                    >
+                    <i class="fab fa-whatsapp fa-lg" style="color: white;"></i> Fale via WhatsApp
+                    </a>
+ 
+                    <a
+                    href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-rounded d-inline-flex align-items-left"
+                    style="gap: 10px;"
+                    >
+                    <i class="fas fa-calendar-alt fa-lg" style="color: white;"></i> Clique aqui para agendar
+                    </a>
+                </div>
+            </div>
+        </center>  
+    
+    </main>
+
+    <footer class="text-center py-4 border-top" style="color:#830394; font-weight: 600;">
+       <h2><center> © 2025 NeuroDivertir | Atendimento Psicológico Online </center></h2>
+    </footer>
+
+    <!-- jQuery, Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
