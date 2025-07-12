@@ -343,6 +343,22 @@
             font-weight: bold; /* Opcional, para destacar ainda mais */
         }
 
+        .btn-ebook {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #e7c0e7;
+            padding: 20px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-ebook:hover {
+            background-color: #e7944c;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
 
     </style>
 
@@ -502,14 +518,14 @@
             </a>
         </div>
 
-        <div class="col-sm-4 text-right">
+        <div class="col-sm-4 text-center">
             <a class="btn-rounded" href="https://www.doctoralia.com.br/clinicas/neurodivertir-saude-integrativa" target="_blank">
                <center>    <i class="fas fa-calendar-alt fa-8x" style="margin-right: 15px; color:#e7944c"></i> <br><!-- Ícone de agenda -->
                 <h4 style="display: inline; color: #830394;">Agende aqui</h4></center>
             </a>
         </div>
     </div>
-</div>
+
 
 <!-- GIFS 
 <section id="formacoes2">
@@ -552,13 +568,6 @@
         </div>
     </div>
 </section> -->
-
-
-
-
-
-
-
 
 
 </section>
@@ -617,8 +626,23 @@
     </div>
   </div>
 </section>
+    <!-- Botão flutuante à direita da tela -->
+<div style="position: absolute; top: 180px; right: 20px; z-index: 999; text-align: center;">
+    <a href="../pg/ebook/Ebook - NeuroDivertir.pdf" class="btn-ebook" download target="_blank" style="display: inline-block; text-align: center;">
+        <i class="fas fa-book-open fa-4x" style="color:#ac5acd; display: block;"></i>
+        <strong style="color:#830394; display: block;">Download eBook</strong>
+    </a>
+</div>
 
-        
+
+     <!-- Botão flutuante fixo na lateral
+    <div style="position: fixed; top: 200px; right: 2px; z-index: 999;">
+        <a href="../pg/ebook/Ebook - NeuroDivertir.pdf" class="btn-ebook" download>
+            <i class="fas fa-book-open fa-4x" style="color:#ac5acd;"></i><br>
+            <strong style="color:#830394;">Baixe o eBook</strong>
+        </a>
+    </div>
+</div>        -->
     
 <section id="cta2" style="background-image: url('images/slider/Clinica.jpeg'); background-size: cover; background-position: center center;">
     <div class="container">
